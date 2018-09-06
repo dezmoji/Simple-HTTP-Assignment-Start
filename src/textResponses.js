@@ -7,7 +7,6 @@ const getTimeString = () => {
 };
 
 const getTime = (request, response) => {
-    console.log(getTimeString());
     response.writeHead(200, { 'Content-Type': 'text/plain' });
     response.write(getTimeString());
     response.end();
